@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby";
 
+import "../styles/index.scss";
+
 export default function Home() {
   return (
     <div style={{ color: `purple` }}>

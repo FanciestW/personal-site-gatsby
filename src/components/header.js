@@ -1,4 +1,11 @@
 import React from "react";
+
+import "../styles/header.scss";
+
 export default function Header(props) {
-  return <h1>{props.headerText}</h1>;
+  return (
+    <header className="header">
+      Header
+    </header>
+  )
 }
