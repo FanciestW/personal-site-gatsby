@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Flex, Link, Text } from "rebass";
+import { Box, Flex, Text } from "rebass";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAdjust } from '@fortawesome/free-solid-svg-icons'
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css'
 
@@ -16,6 +18,7 @@ export default function Header(props) {
         </Typist>
       </Text>
       <Box mx="auto" />
+      <FontAwesomeIcon icon={faAdjust} />
     </Flex>
   );
 }
