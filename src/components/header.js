@@ -9,8 +9,10 @@ export default function Header(props) {
   return (
     <Flex px={6} color="white" bg="black" alignItems="center">
       <Text p={3} fontWeight="bold">
-        <Typist cursor={{blink:true}}>
-          > Hello World
+        <Typist cursor={{blink:true, element:'_'}}>
+          {'> Hello World!'}
+          <Typist.Backspace count={7} delay={2000} />
+          {', I\'m William!'}
         </Typist>
       </Text>
       <Box mx="auto" />
