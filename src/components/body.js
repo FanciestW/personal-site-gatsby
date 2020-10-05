@@ -7,7 +7,6 @@ export default function Body() {
     <Flex flexGrow={1} px={[0, 6]} style={{ backgroundColor: "#272727" }}>
       <Box p={3} style={{ height: "100%", width: "100%", backgroundColor: "#0000002A" }}>
         <HeadImage />
-        <Text>Hello World!</Text>
       </Box>
     </Flex>
   );

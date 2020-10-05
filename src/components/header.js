@@ -7,7 +7,7 @@ import "react-typist/dist/Typist.css";
 
 import "../styles/header.scss";
 
-export default function Header(props) {
+export default function Header() {
   return (
     <Flex px={[0, 6]} color="white" bg="black" alignItems="center">
       <Text p={3} fontSize={4} fontWeight="bold">
