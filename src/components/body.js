@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import { Box, Flex, Text } from "rebass";
 
 export default function Body(props) {
