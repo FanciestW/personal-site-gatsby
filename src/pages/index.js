@@ -6,7 +6,7 @@ import "../styles/index.scss";
 
 export default function Home() {
   return (
-    <Flex flexDirection='column' style={{height: '100vh'}}>
+    <Flex color="white" bg="black" flexDirection='column' style={{height: '100vh'}}>
       <Box>
         <Header />
       </Box>
