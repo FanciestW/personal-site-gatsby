@@ -10,7 +10,7 @@ export default function Home() {
       <Box>
         <Header />
       </Box>
-      <Flex flexGrow={1} px={6} style={{backgroundColor: '#272727'}}>
+      <Flex flexGrow={1} px={[1,6]} style={{backgroundColor: '#272727'}}>
         <Box p={3} style={{height: '100%', width: '100%', backgroundColor: '#0000002A'}}>
           <Text>Hello World!</Text>
         </Box>

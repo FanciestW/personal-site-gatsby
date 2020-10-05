@@ -9,7 +9,7 @@ import "../styles/header.scss";
 
 export default function Header(props) {
   return (
-    <Flex px={6} bg="black" alignItems="center">
+    <Flex px={[0,6]} color="white" bg="black" alignItems="center">
       <Text p={3} fontSize={4} fontWeight="bold">
         <Typist cursor={{blink:true, element:'_'}}>
           {'> Hello World!'}
@@ -18,7 +18,9 @@ export default function Header(props) {
         </Typist>
       </Text>
       <Box mx="auto" />
-      <FontAwesomeIcon icon={faAdjust} />
+      <Box px={3}>
+        <FontAwesomeIcon icon={faAdjust} />
+      </Box>
     </Flex>
   );
 }
