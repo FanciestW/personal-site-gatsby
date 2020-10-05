@@ -1,3 +1,4 @@
+// Uses the JSON Resume schema (https://jsonresume.org/schema/)
 {
   "basics": {
     "name": "William Lin",
@@ -20,6 +21,11 @@
         "url": "https://github.com/FanciestW"
       },
       {
+        "network": "LinkedIn",
+        "username": "FanciestW",
+        "url": "https://linkedin.com/in/FanciestW"
+      },
+      {
         "network": "Twitter",
         "username": "FanciestW",
         "url": "http://twitter.com/FanciestW"
@@ -40,13 +46,22 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "University",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "gpa": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
+      "institution": "University of New Haven",
+      "area": "Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2019-08-01",
+      "endDate": "2020-12-01",
+      "gpa": "3.95",
+      "courses": []
+    },
+    {
+      "institution": "University of New Haven",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2015-08-01",
+      "endDate": "2019-05-01",
+      "gpa": "3.65",
+      "courses": []
     }
   ],
   "awards": [
