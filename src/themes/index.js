@@ -33,6 +33,9 @@ export default {
     circleHeaderImage: {
       width: ["35%", "30%", "25%", "15%"],
       borderRadius: "100%",
+    },
+    flexMargins: {
+      px: [0, 0, 4, 6]
     }
   }
 }

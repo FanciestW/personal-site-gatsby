@@ -9,7 +9,7 @@ import "../styles/header.scss";
 
 export default function Header() {
   return (
-    <Flex bg="primary" px={[0, 0, 4, 6]} alignItems="center">
+    <Flex bg="primary" variant="flexMargins" alignItems="center">
       <Text variant="primary" p={3} fontSize={4} fontWeight="bold">
         <Typist cursor={{ blink: true, element: "_" }}>
           {"> Hello World!"}
