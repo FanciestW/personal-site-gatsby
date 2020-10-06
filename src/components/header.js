@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Text } from "rebass";
+import { Box, Button, Flex, Text } from "rebass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdjust } from "@fortawesome/free-solid-svg-icons";
 import Typist from "react-typist";
@@ -9,8 +9,8 @@ import "../styles/header.scss";
 
 export default function Header() {
   return (
-    <Flex px={[0, 0, 4, 6]} color="white" bg="black" alignItems="center">
-      <Text p={3} fontSize={4} fontWeight="bold">
+    <Flex bg="primary" px={[0, 0, 4, 6]} alignItems="center">
+      <Text variant="primary" p={3} fontSize={4} fontWeight="bold">
         <Typist cursor={{ blink: true, element: "_" }}>
           {"> Hello World!"}
           <Typist.Backspace count={7} delay={2000} />
@@ -19,7 +19,9 @@ export default function Header() {
       </Text>
       <Box mx="auto" />
       <Box px={3}>
-        <FontAwesomeIcon icon={faAdjust} />
+        <Button variant="circleIcon">
+          <FontAwesomeIcon size='lg' icon={faAdjust} />
+        </Button>
       </Box>
     </Flex>
   );
