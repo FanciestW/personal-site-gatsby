@@ -13,7 +13,7 @@ export default {
   },
   text: {
     primary: {
-      color: 'white'
+      color: 'text'
     }
   },
   buttons: {
@@ -27,6 +27,12 @@ export default {
         boxShadow: '0px 0px 0px 2px',
         cursor: 'pointer',
       },
+    }
+  },
+  variants: {
+    circleHeaderImage: {
+      width: ["35%", "30%", "25%", "15%"],
+      borderRadius: "100%",
     }
   }
 }
