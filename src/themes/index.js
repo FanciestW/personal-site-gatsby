@@ -11,6 +11,10 @@ export default {
       }
     }
   },
+  body: {
+    color: 'text',
+    backgroundColor: 'background',
+  },
   text: {
     primary: {
       color: 'text'
@@ -36,6 +40,6 @@ export default {
     },
     flexMargins: {
       px: [0, 0, 4, 6]
-    }
+    },
   }
 }
