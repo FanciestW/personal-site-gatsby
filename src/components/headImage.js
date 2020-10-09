@@ -6,7 +6,7 @@ import TypistLoop from "./typistLoop";
 
 export default function HeadImage() {
   return (
-    <Flex justifyContent="center" alignItems="center" flexDirection="column">
+    <Flex style={{ borderBottom: "1px solid" }} justifyContent="center" alignItems="center" flexDirection="column">
       <Image src={profilePic} variant="circleHeaderImage" />
       <Text color="text" pt={[2, 3]} fontWeight="bold" fontSize={[3, 4]}>
         William Lin
