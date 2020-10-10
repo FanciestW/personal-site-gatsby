@@ -19,6 +19,11 @@ export default {
     primary: {
       color: "text",
     },
+    sectionHeader: {
+      color: "text",
+      fontSize: [4, 5],
+      fontWeight: "bold",
+    },
   },
   buttons: {
     circleIcon: {
