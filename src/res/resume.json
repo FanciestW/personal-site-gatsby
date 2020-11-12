@@ -34,13 +34,64 @@
   },
   "work": [
     {
-      "company": "Company",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description...",
-      "highlights": ["Started the company"]
+      "company": "University of New Haven",
+      "position": "Graduate Teaching Assistant",
+      "website": "https://unewhaven.edu",
+      "startDate": "2019-09-01",
+      "endDate": null,
+      "summary": "Lecturer for Intermediate C/C++ recitation class. Teaching assistant for: Intro to C Programming, Intermediate C/C++, Android Development, UNIX Systems Programming, and Object Oriented Programming in C++.",
+      "highlights": []
+    },
+    {
+      "company": "Capital One",
+      "position": "Software Engineer Intern",
+      "website": "https://capitalone.com",
+      "startDate": "2020-06-01",
+      "endDate": "2020-08-01",
+      "summary": "Intern for Capital One's Associate Collaboration team. Designed and developed a full stack web application using React for the front-end, Node.js and Express for the back-end."
+    },
+    {
+      "company": "SoluTech Inc.",
+      "position": "Lead Software Engineer",
+      "startDate": "2017-01-01",
+      "endDate": "2019-10-01",
+      "summary": "SoluTech is a college dorm room startup that my friends and I started. My day consists of meeting with the team to learn what they are doing and what they have done. Responsible for researching and developing many of the new technologies in the product, SlideDrive. Collaborated on the development of an Angular Electron application using WebRTC, MongoDB, and OAuth."
+    },
+    {
+      "company": "Capital One",
+      "position": "Software Engineer Intern",
+      "website": "https://capitalone.com",
+      "startDate": "2019-06-01",
+      "endDate": "2019-08-01",
+      "summary": "Interned on the Cloud Networking Services team. Built a prototype of an enterprise level cloud monitoring solution. Tech stack included Python, Vue.JS, and AWS. Worked heavily with AWS resources such as IAM, Cloudwatch, Lambda, and SQS. Wrote Python Lambda functions to build serverless backend infrastructure to scale the application and reduce costs."
+    },
+    {
+      "company": "Conferdense Inc.",
+      "position": "Android Developer",
+      "startDate": "2018-03-01",
+      "endDate": "2019-05-01",
+      "summary": "Built an Android application using Java and Google Firebase. Designed a user-friendly application using modern design techniques. Identified performance issues and address them by re-designing database to save on usage costs."
+    },
+    {
+      "company": "The MITRE Corporation",
+      "position": "Software Engineering Intern",
+      "startDate": "2018-06-01",
+      "endDate": "2018-08-01",
+      "summary": "As an intern on the Advanced Mission Planning team I help developed next generation mission planning software for the U.S. Navy and Air Force. Coordinated with design team to provide a friendly UI/UX for users of the software. Along with that, was able to design and build a robust backend for the software."
+    },
+    {
+      "company": "Abbott Jewelry Systems Inc.",
+      "position": "Software Engineer",
+      "startDate": "2013-10-01",
+      "endDate": "2018-05-01",
+      "summary": "I developed software in VB.net for retail management. I develop and test code before submitting it for a code review. After my code is reviewed successfully, it is committed to the codebase. I also code review my peer's code to make sure that I can also read the code that I haven't wrote. This allows me to understand more about the software even if I was not working on that particular part. I practiced Agile software development with daily standups and code sprints."
+    },
+    {
+      "company": "Self Employed",
+      "position": "IT Technician",
+      "startDate": "2015-08-01",
+      "endDate": "2017-08-01",
+      "summary": "I started my own business offering IT and Computer services to the Great New Haven Area. I have worked on home offices, dentist offices, and more. Some services that I have have done include but are not limited to: computer security, software installation, office network installation, building computer, and more."
     }
   ],
   "volunteer": [],
@@ -77,7 +128,11 @@
     {
       "name": "Web Development",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
     }
   ],
   "languages": [
@@ -93,7 +148,10 @@
   "interests": [
     {
       "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
     }
   ],
   "references": []
