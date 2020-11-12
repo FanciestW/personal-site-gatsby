@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <Flex bg="primary" variant="flexMargins" alignItems="center">
       <ReactTooltip place="bottom" effect="solid" />
-      <Text variant="primary" p={3} fontSize={4} fontWeight="bold">
+      <Text variant="primary" p={3} fontSize={[3, 4]} fontWeight="bold">
         <Typist cursor={{ blink: true, element: "_" }}>
           {"> Hello World!"}
           <Typist.Backspace count={7} delay={2000} />

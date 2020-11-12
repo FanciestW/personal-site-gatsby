@@ -13,7 +13,7 @@ export default function HeadImage() {
       alignItems="center"
       flexDirection="column">
       <Image src={profilePic} variant="circleHeaderImage" />
-      <Text color="text" pt={[2, 3]} fontWeight="bold" fontSize={[3, 4]}>
+      <Text color="text" pt={[2, 3]} fontWeight="bold" fontSize={[4, 5]}>
         William Lin
       </Text>
       <TypistLoop
