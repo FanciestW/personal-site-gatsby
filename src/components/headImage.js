@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Flex, Image, Text } from "rebass";
+import TypistLoop from "./typistLoop";
+import ResumeDataContext from "./ResumeDataContext";
 
 import profilePic from "../res/profile-image.jpeg";
-import TypistLoop from "./typistLoop";
 
 export default function HeadImage() {
+  const resumeData = useContext(ResumeDataContext);
   return (
     <Flex
       mb={[10, 20]}
@@ -14,7 +16,7 @@ export default function HeadImage() {
       flexDirection="column">
       <Image src={profilePic} variant="circleHeaderImage" />
       <Text color="text" pt={[2, 3]} fontWeight="bold" fontSize={[4, 5]}>
-        William Lin
+        {resumeData.basics.name || "No Name"}
       </Text>
       <TypistLoop
         cursor={{ blink: true, element: "_" }}
