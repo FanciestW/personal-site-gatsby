@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Flex, Text } from "rebass";
+import ExperienceItem from "./experienceItem";
 import ResumeDataContext from "./ResumeDataContext";
 
 export default function ExperienceSection() {
@@ -8,6 +9,9 @@ export default function ExperienceSection() {
   return (
     <Flex>
       <Text variant="sectionHeader">Experience</Text>
+      {workExperienceList.map((workObj) => {
+        return <ExperienceItem></ExperienceItem>;
+      })}
     </Flex>
   );
 }
