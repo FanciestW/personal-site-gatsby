@@ -1,6 +1,13 @@
 import React, { useContext } from "react";
-import { Flex, Text } from "rebass";
+import { Box, Flex, Text } from "rebass";
 
 export default function ExperienceItem(props) {
-  return <Text>ExperienceItem</Text>;
+  return (
+    <Flex flexDirection="column">
+      <Box>{"Title"}</Box>
+      <Box>{"Company"}</Box>
+      <Box>{"Date"}</Box>
+      <Box>{"Summary"}</Box>
+    </Flex>
+  );
 }
