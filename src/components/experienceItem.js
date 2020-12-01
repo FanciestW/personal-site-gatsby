@@ -5,9 +5,7 @@ import { Box, Flex, Text } from "rebass";
 import { useMediaQuery } from "react-responsive";
 
 export default function ExperienceItem(props) {
-  const isPhone = useMediaQuery({
-    query: "(max-width: 650px)",
-  });
+  const isPhone = useMediaQuery({ maxDeviceWidth: 650 });
   const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
   const startDate = moment(props.startDate, "YYYY-MM-DD");
   const endDate = moment(props.endDate, "YYYY-MM-DD");
@@ -27,10 +25,10 @@ export default function ExperienceItem(props) {
           <i>{props.company}</i>
         </Text>
       </Flex>
-      <Box>
+      <Box pt={1}>
         <Text>{`${startDate.format("MMM YYYY")} - ${endDate.isValid() ? endDate.format("MMM YYYY") : "Present"}`}</Text>
       </Box>
-      <Box>
+      <Box pt={(1, 2)}>
         <Text>{props.summary}</Text>
       </Box>
     </Flex>
