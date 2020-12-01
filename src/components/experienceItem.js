@@ -6,7 +6,6 @@ import { useMediaQuery } from "react-responsive";
 
 export default function ExperienceItem(props) {
   const isPhone = useMediaQuery({ maxDeviceWidth: 650 });
-  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
   const startDate = moment(props.startDate, "YYYY-MM-DD");
   const endDate = moment(props.endDate, "YYYY-MM-DD");
   return (
