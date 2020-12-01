@@ -11,13 +11,21 @@ export default function ExperienceSection() {
       <Box>
         <Text variant="sectionHeader">Experience</Text>
       </Box>
-      {workExperienceList.map((workObj) => {
-        return (
-          <Box>
-            <ExperienceItem></ExperienceItem>
-          </Box>
-        );
-      })}
+      <Box px={3}>
+        {workExperienceList.map((workObj, i) => {
+          const { position, company, startDate, endDate, summary } = workObj;
+          return (
+            <Box py={2} sx={i > 0 ? { borderTop: "1px dotted" } : null}>
+              <ExperienceItem
+                title={position}
+                company={company}
+                dates={`${startDate} - ${endDate ?? "present"}`}
+                summary={summary}
+              />
+            </Box>
+          );
+        })}
+      </Box>
     </Flex>
   );
 }

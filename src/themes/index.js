@@ -24,6 +24,11 @@ export default {
       fontSize: [4, 5],
       fontWeight: "bold",
     },
+    experienceTitle: {
+      color: "text",
+      fontSize: [2, 3],
+      fontWeight: "bold",
+    },
   },
   buttons: {
     circleIcon: {
