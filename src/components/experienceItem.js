@@ -1,8 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import moment from "moment";
 import { Box, Flex, Text } from "rebass";
 
 export default function ExperienceItem(props) {
+  const startDate = moment(props.startDate, "YYYY-MM-DD");
+  const endDate = moment(props.endDate, "YYYY-MM-DD");
   return (
     <Flex flexDirection="column">
       <Flex flexDirection="row" justifyContent="flex-start" alignItems="flex-end">
@@ -15,7 +18,7 @@ export default function ExperienceItem(props) {
         </Text>
       </Flex>
       <Box>
-        <Text>{props.dates}</Text>
+        <Text>{`${startDate.format("MMM YYYY")} - ${endDate.isValid() ? endDate.format("MMM YYYY") : "Present"}`}</Text>
       </Box>
       <Box>
         <Text>{props.summary}</Text>
@@ -25,8 +28,9 @@ export default function ExperienceItem(props) {
 }
 
 ExperienceItem.propTypes = {
-  title: PropTypes.string,
-  company: PropTypes.string,
-  dates: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  startDate: PropTypes.string.isRequired,
+  endDate: PropTypes.string,
   summary: PropTypes.string,
 };

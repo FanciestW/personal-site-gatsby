@@ -19,7 +19,8 @@ export default function ExperienceSection() {
               <ExperienceItem
                 title={position}
                 company={company}
-                dates={`${startDate} - ${endDate ?? "present"}`}
+                startDate={startDate}
+                endDate={endDate}
                 summary={summary}
               />
             </Box>
