@@ -26,7 +26,7 @@ export default {
     },
     experienceTitle: {
       color: "text",
-      fontSize: [2, 3],
+      fontSize: [1, 3],
       fontWeight: "bold",
     },
   },
