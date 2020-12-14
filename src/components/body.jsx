@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Flex } from "rebass";
+import EducationSection from "./educationSection";
 import ExperienceSection from "./experienceSection";
 import HeadImage from "./headImage";
 
@@ -9,6 +10,7 @@ export default function Body() {
       <Box p={3} style={{ height: "100%", width: "100%", backgroundColor: "#0000002A" }}>
         <HeadImage />
         <ExperienceSection />
+        <EducationSection />
       </Box>
     </Flex>
   );
