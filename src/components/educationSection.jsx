@@ -9,6 +9,9 @@ export default function EducationSection() {
       <Box>
         <Text variant="sectionHeader">Education</Text>
       </Box>
+      <Box>
+        
+      </Box>
     </Flex>
   )
 }
