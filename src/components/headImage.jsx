@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Flex, Image, Text } from "rebass";
 import TypistLoop from "./typistLoop";
-import ResumeDataContext from "./ResumeDataContext";
+import ResumeDataContext from "./context/ResumeDataContext";
 
 import profilePic from "../res/profile-image.jpeg";
 

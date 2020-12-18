@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Box, Flex, Text } from "rebass";
 import ExperienceItem from "./experienceItem";
-import ResumeDataContext from "./ResumeDataContext";
+import ResumeDataContext from "../context/ResumeDataContext";
 
 export default function ExperienceSection() {
   const resumeData = useContext(ResumeDataContext);

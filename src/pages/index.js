@@ -3,7 +3,7 @@ import { ThemeProvider } from "theme-ui";
 import { Flex } from "rebass";
 import Body from "../components/body";
 import Header from "../components/header";
-import ResumeDataContext from "../components/ResumeDataContext";
+import ResumeDataContext from "../components/context/ResumeDataContext";
 
 import theme from "../themes";
 import "../styles/index.scss";

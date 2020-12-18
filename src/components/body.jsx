@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex } from "rebass";
-import EducationSection from "./educationSection";
-import ExperienceSection from "./experienceSection";
+import EducationSection from "./education/educationSection";
+import ExperienceSection from "./experience/experienceSection";
 import HeadImage from "./headImage";
 
 export default function Body() {
