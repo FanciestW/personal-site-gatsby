@@ -14,13 +14,13 @@ export default function ExperienceItem(props) {
         flexDirection={isPhone ? "column" : "row"}
         justifyContent="flex-start"
         alignItems={isPhone ? "flex-start" : "flex-end"}>
-        <Text variant="experienceTitle">{props.title}</Text>
+        <Text variant="sectionItemTitle">{props.title}</Text>
         {!isPhone && (
-          <Text variant="experienceTitle" px={(1, 2)}>
+          <Text variant="sectionItemTitle" px={(1, 2)}>
             {"-"}
           </Text>
         )}
-        <Text variant="experienceTitle" fontWeight="normal">
+        <Text variant="sectionItemTitle" fontWeight="normal">
           <i>{props.company}</i>
         </Text>
       </Flex>

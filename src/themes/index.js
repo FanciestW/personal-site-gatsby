@@ -24,7 +24,7 @@ export default {
       fontSize: [4, 5],
       fontWeight: "bold",
     },
-    experienceTitle: {
+    sectionItemTitle: {
       color: "text",
       fontSize: [1, 3],
       fontWeight: "bold",
