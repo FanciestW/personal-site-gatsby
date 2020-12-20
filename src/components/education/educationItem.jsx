@@ -20,11 +20,11 @@ export default function EducationItem(props) {
             {"-"}
           </Text>
         )}
-      </Flex>
-      <Box>
         <Text variant="sectionItemTitle" fontWeight="normal">
           <i>{props.studyType}</i>
         </Text>
+      </Flex>
+      <Box>
         <Text variant="sectionItemTitle" fontWeight="normal">
           <i>{props.area}</i>
         </Text>
