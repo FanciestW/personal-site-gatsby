@@ -3,6 +3,7 @@ export default {
     text: "#fafafa",
     background: "#212121",
     primary: "#121212",
+    linkHover: "#cc3300",
     modes: {
       light: {
         text: "#fff",
@@ -57,11 +58,9 @@ export default {
     contactIconLink: {
       display: "inline-block",
       mx: "5px",
-      padding: 1,
       color: "text",
       "&:hover": {
-        borderRadius: "100%",
-        boxShadow: "0px 0px 0px 2px",
+        color: "linkHover",
         cursor: "pointer",
       },
     },
