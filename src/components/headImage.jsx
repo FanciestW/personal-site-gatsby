@@ -4,6 +4,7 @@ import TypistLoop from "./typistLoop";
 import ResumeDataContext from "./context/ResumeDataContext";
 
 import profilePic from "../res/profile-image.jpeg";
+import ContactInfo from "./contactInfo";
 
 export default function HeadImage() {
   const resumeData = useContext(ResumeDataContext);
@@ -13,7 +14,8 @@ export default function HeadImage() {
       style={{ borderBottom: "1px solid" }}
       justifyContent="center"
       alignItems="center"
-      flexDirection="column">
+      flexDirection="column"
+      pb={[2, 3]}>
       <Image src={profilePic} variant="circleHeaderImage" />
       <Text color="text" pt={[2, 3]} fontWeight="bold" fontSize={[4, 5]}>
         {resumeData.basics.name || "No Name"}
@@ -23,6 +25,7 @@ export default function HeadImage() {
         leadText="I'm a "
         textList={["Software Engineer", "Student", "Friend"]}
       />
+      <ContactInfo />
     </Flex>
   );
 }
