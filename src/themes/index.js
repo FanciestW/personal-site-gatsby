@@ -54,5 +54,16 @@ export default {
     flexMargins: {
       px: [0, 0, 4, 6],
     },
+    contactIconLink: {
+      display: "inline-block",
+      mx: "5px",
+      padding: 1,
+      color: "text",
+      "&:hover": {
+        borderRadius: "100%",
+        boxShadow: "0px 0px 0px 2px",
+        cursor: "pointer",
+      },
+    },
   },
 };
