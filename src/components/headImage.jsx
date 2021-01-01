@@ -15,7 +15,7 @@ export default function HeadImage() {
       justifyContent="center"
       alignItems="center"
       flexDirection="column"
-      pb={[2, 3]}>
+      pb={[1, 2]}>
       <Image src={profilePic} variant="circleHeaderImage" />
       <Text color="text" pt={[2, 3]} fontWeight="bold" fontSize={[4, 5]}>
         {resumeData.basics.name || "No Name"}
