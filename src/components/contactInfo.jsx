@@ -25,6 +25,8 @@ export default function ContactInfo() {
         case "twitter":
           twitterProfile = profile;
           break;
+        default:
+          break;
       }
     }
   });
