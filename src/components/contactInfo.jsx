@@ -33,16 +33,16 @@ export default function ContactInfo() {
   console.log({ email, githubProfile, linkedinProfile, twitterProfile });
   return (
     <Box>
-      <Link variant="contactIconLink" href={`mailto:${email}`}>
+      <Link variant="contactIconLink" href={`mailto:${email}`} target="_blank">
         <FontAwesomeIcon size="2x" icon={faEnvelope} />
       </Link>
-      <Link variant="contactIconLink" href={githubProfile.url}>
+      <Link variant="contactIconLink" href={githubProfile.url} target="_blank">
         <FontAwesomeIcon size="2x" icon={faGithub} />
       </Link>
-      <Link variant="contactIconLink" href={linkedinProfile.url}>
+      <Link variant="contactIconLink" href={linkedinProfile.url} target="_blank">
         <FontAwesomeIcon size="2x" icon={faLinkedin} />
       </Link>
-      <Link variant="contactIconLink" href={linkedinProfile.url}>
+      <Link variant="contactIconLink" href={linkedinProfile.url} target="_blank">
         <FontAwesomeIcon size="2x" icon={faTwitter} />
       </Link>
     </Box>
