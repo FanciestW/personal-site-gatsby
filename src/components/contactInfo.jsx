@@ -31,7 +31,7 @@ export default function ContactInfo() {
   console.log({ email, githubProfile, linkedinProfile, twitterProfile });
   return (
     <Box>
-      <Link variant="contactIconLink" href={email}>
+      <Link variant="contactIconLink" href={`mailto:${email}`}>
         <FontAwesomeIcon size="2x" icon={faEnvelope} />
       </Link>
       <Link variant="contactIconLink" href={githubProfile.url}>
