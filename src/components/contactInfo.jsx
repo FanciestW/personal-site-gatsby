@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Flex, Text, Link } from "rebass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -6,8 +6,29 @@ import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-ic
 import ResumeDataContext from "./context/ResumeDataContext";
 
 export default function ContactInfo() {
-  const { email, profiles } = ResumeDataContext
+  const resumeData = useContext(ResumeDataContext);
+  console.log({ resumeData });
+  const {
+    basics: { email, profiles },
+  } = resumeData;
+  console.log({ email, profiles });
   let githubProfile, linkedinProfile, twitterProfile;
+  profiles.foreach((profile) => {
+    if (profile.network) {
+      switch (profile.network.toLowerCase()) {
+        case "github":
+          githubProfile = profile;
+          break;
+        case "linkedin":
+          linkedinProfile = profile;
+          break;
+        case "twitter":
+          twitterProfile = profile;
+          break;
+      }
+    }
+  });
+  console.log({ email, githubProfile, linkedinProfile, twitterProfile });
   return (
     <Box>
       <Link variant="contactIconLink">
