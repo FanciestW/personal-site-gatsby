@@ -13,7 +13,7 @@ export default function ContactInfo() {
   } = resumeData;
   console.log({ email, profiles });
   let githubProfile, linkedinProfile, twitterProfile;
-  profiles.foreach((profile) => {
+  profiles.forEach((profile) => {
     if (profile.network) {
       switch (profile.network.toLowerCase()) {
         case "github":
@@ -31,16 +31,16 @@ export default function ContactInfo() {
   console.log({ email, githubProfile, linkedinProfile, twitterProfile });
   return (
     <Box>
-      <Link variant="contactIconLink">
+      <Link variant="contactIconLink" href={email}>
         <FontAwesomeIcon size="2x" icon={faEnvelope} />
       </Link>
-      <Link variant="contactIconLink">
+      <Link variant="contactIconLink" href={githubProfile.url}>
         <FontAwesomeIcon size="2x" icon={faGithub} />
       </Link>
-      <Link variant="contactIconLink">
+      <Link variant="contactIconLink" href={linkedinProfile.url}>
         <FontAwesomeIcon size="2x" icon={faLinkedin} />
       </Link>
-      <Link variant="contactIconLink">
+      <Link variant="contactIconLink" href={linkedinProfile.url}>
         <FontAwesomeIcon size="2x" icon={faTwitter} />
       </Link>
     </Box>
