@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Box, Flex, Text, Link } from "rebass";
+import { Box, Link } from "rebass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
