@@ -6,8 +6,6 @@ import Typist from "react-typist";
 import ReactTooltip from "react-tooltip";
 import "react-typist/dist/Typist.css";
 
-import "../styles/header.scss";
-
 export default function Header() {
   return (
     <Flex bg="primary" variant="flexMargins" alignItems="center">
