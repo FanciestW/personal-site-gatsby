@@ -3,6 +3,7 @@ import { ThemeProvider } from "theme-ui";
 import { Flex } from "rebass";
 import Body from "../components/body";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import ResumeDataContext from "../components/context/ResumeDataContext";
 
 import theme from "../themes";
@@ -16,6 +17,7 @@ export default function Home() {
         <ResumeDataContext.Provider value={ResumeDataJSON}>
           <Header />
           <Body />
+          <Footer />
         </ResumeDataContext.Provider>
       </Flex>
     </ThemeProvider>
