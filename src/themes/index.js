@@ -64,5 +64,13 @@ export default {
         cursor: "pointer",
       },
     },
+    textLink: {
+      display: "inline-block",
+      color: "text",
+      textDecoration: "underline",
+      "&:hover": {
+        color: "linkHover",
+      },
+    },
   },
 };
