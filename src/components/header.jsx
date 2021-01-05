@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Flex, Text } from "rebass";
+import { Box, Button, Flex, Link, Text } from "rebass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdjust, faDownload } from "@fortawesome/free-solid-svg-icons";
 import Typist from "react-typist";
@@ -19,9 +19,11 @@ export default function Header() {
       </Text>
       <Box mx="auto" />
       <Box px={3}>
-        <Button variant="circleIcon" data-tip="Download Resume">
-          <FontAwesomeIcon size="lg" icon={faDownload} />
-        </Button>
+        <Link href="https://drive.google.com/uc?export=download&id=15MhjIAEKGBNL76SZ106hSpkbfiu7pJ4F" target="_blank">
+          <Button variant="circleIcon" data-tip="Download Resume">
+            <FontAwesomeIcon size="lg" icon={faDownload} />
+          </Button>
+        </Link>
       </Box>
       <Box px={3}>
         <Button variant="circleIcon" data-tip="Theme">
