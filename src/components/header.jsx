@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Flex, Text } from "rebass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdjust } from "@fortawesome/free-solid-svg-icons";
+import { faAdjust, faDownload } from "@fortawesome/free-solid-svg-icons";
 import Typist from "react-typist";
 import ReactTooltip from "react-tooltip";
 import "react-typist/dist/Typist.css";
@@ -18,6 +18,11 @@ export default function Header() {
         </Typist>
       </Text>
       <Box mx="auto" />
+      <Box px={3}>
+        <Button variant="circleIcon" data-tip="Download Resume">
+          <FontAwesomeIcon size="lg" icon={faDownload} />
+        </Button>
+      </Box>
       <Box px={3}>
         <Button variant="circleIcon" data-tip="Theme">
           <FontAwesomeIcon size="lg" icon={faAdjust} />
