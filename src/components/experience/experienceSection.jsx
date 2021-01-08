@@ -7,7 +7,7 @@ export default function ExperienceSection() {
   const resumeData = useContext(ResumeDataContext);
   const workExperienceList = resumeData.work;
   return (
-    <Flex flexDirection="column">
+    <Flex flexDirection="column" style={{ borderBottom: "1px solid" }} pb={[1, 2]} mb={[10, 20]}>
       <Box>
         <Text variant="sectionHeader">Experience</Text>
       </Box>
