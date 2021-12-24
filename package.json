@@ -22,6 +22,7 @@
     "gatsby-cli": "^3.12.0",
     "gatsby-link": "^3.12.0",
     "gatsby-plugin-sass": "^4.12.0",
+    "gatsby-plugin-theme-ui": "^0.12.1",
     "gatsby-react-router-scroll": "^4.12.0",
     "moment": "^2.29.1",
     "node-sass": "^6.0.1",
@@ -31,7 +32,7 @@
     "react-tooltip": "^4.2.10",
     "react-typist": "^2.0.5",
     "rebass": "^4.0.7",
-    "theme-ui": "^0.10.0"
+    "theme-ui": "^0.12.1"
   },
   "devDependencies": {
     "prettier": "^2.3.2"

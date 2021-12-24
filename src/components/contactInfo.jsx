@@ -7,11 +7,9 @@ import ResumeDataContext from "./context/ResumeDataContext";
 
 export default function ContactInfo() {
   const resumeData = useContext(ResumeDataContext);
-  console.log({ resumeData });
   const {
     basics: { email, profiles },
   } = resumeData;
-  console.log({ email, profiles });
   let githubProfile, linkedinProfile, twitterProfile;
   profiles.forEach((profile) => {
     if (profile.network) {
@@ -30,7 +28,6 @@ export default function ContactInfo() {
       }
     }
   });
-  console.log({ email, githubProfile, linkedinProfile, twitterProfile });
   return (
     <Box>
       <Link variant="contactIconLink" href={`mailto:${email}`} target="_blank">
