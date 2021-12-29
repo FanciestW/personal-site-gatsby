@@ -1,5 +1,7 @@
+/** @jsx jsx */
+import { jsx, Image, Text } from "theme-ui";
 import React, { useContext } from "react";
-import { Flex, Image, Text } from "rebass";
+import { Flex } from "rebass";
 import TypistLoop from "./typistLoop";
 import ResumeDataContext from "./context/ResumeDataContext";
 

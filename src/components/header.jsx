@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Button, Flex, Link, Text } from "rebass";
+import { Box, Flex, Link, Text } from "rebass";
+import { Button } from "theme-ui";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdjust, faDownload } from "@fortawesome/free-solid-svg-icons";
 import Typist from "react-typist";
